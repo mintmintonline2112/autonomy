@@ -2,7 +2,8 @@
 // và sinh web/<id>/index.html để mỗi phương tiện có URL riêng trên máy chủ tĩnh.
 import fs from 'node:fs';
 import path from 'node:path';
-const root=path.resolve(new URL('..',import.meta.url).pathname);
+import {fileURLToPath} from 'node:url';
+const root=fileURLToPath(new URL('..',import.meta.url));
 const modelsDir=path.join(root,'models');
 const ids=fs.readdirSync(modelsDir,{withFileTypes:true}).filter(e=>e.isDirectory()&&fs.existsSync(path.join(modelsDir,e.name,'model.json'))).map(e=>e.name).sort();
 const template=fs.readFileSync(path.join(root,'web/index.html'),'utf8');
