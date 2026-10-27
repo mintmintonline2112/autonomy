@@ -2,14 +2,15 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import * as THREE from 'three';
 import {loadGLB} from './lib/load-glb.mjs';
-import {createExplosionLayout,layoutCenter,overviewDirection} from '../app/explosion-layout.ts';
+import {createExplosionLayout,layoutCenter,minLayoutWidth,overviewDirection} from '../app/explosion-layout.ts';
 const id=process.argv[2];if(!id){console.error('usage: validate-explosion.mjs <id>');process.exit(1)}
 const manifest=JSON.parse(fs.readFileSync(`public/models/${id}/manifest.json`,'utf8'));
 const {asset}=await loadGLB(`public/models/${id}/${manifest.file}`);
 asset.scene.updateMatrixWorld(true);
 const input=[];
 asset.scene.traverse(o=>{if(o.userData.component)input.push({id:o.userData.component,part:o.userData.part,bounds:new THREE.Box3().setFromObject(o)});});
-const result=createExplosionLayout(input);assert.equal(result.pieces.size,manifest.objects.length);
+const model=JSON.parse(fs.readFileSync(`models/${id}/model.json`,'utf8'));
+const result=createExplosionLayout(input,minLayoutWidth(model.type||'car',model.dimensions.length));assert.equal(result.pieces.size,manifest.objects.length);
 const slots=[...result.pieces.values()];
 for(let i=0;i<slots.length;i++)for(let j=i+1;j<slots.length;j++){
  const a=slots[i],b=slots[j];

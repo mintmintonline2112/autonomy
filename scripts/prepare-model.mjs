@@ -25,7 +25,9 @@ if(args['max-pieces'])cfg.maxPieces=Number(args['max-pieces']);if(args['min-face
 const LENGTH=model.dimensions.length;const type=model.type||'car';
 const input=cfg.input?path.join('source',id,cfg.input):findSource(path.join('source',id));
 const ignoreRe=cfg.ignore.length?new RegExp(cfg.ignore.join('|'),'i'):null;
-const hints=cfg.hints.map(h=>({re:new RegExp(h.match,'i'),part:h.part,key:h.key}));
+// near: [x,y,z] tâm mảnh như trong review.md (±6 cm) — phân biệt các mảnh cùng lưới/vật liệu.
+const hints=cfg.hints.map(h=>({re:new RegExp(h.match,'i'),part:h.part,key:h.key,near:h.near||null}));
+const hintFor=i=>hints.find(h=>h.re.test(i.text)&&(!h.near||h.near.every((v,a)=>Math.abs(v-i.center[a])<.06)));
 const outDir=path.join('public/models',id);fs.mkdirSync(outDir,{recursive:true});
 log(`${model.brand} ${model.name} ← ${input}`);
 
@@ -42,7 +44,9 @@ for(const node of scene.listChildren()){const mesh=node.getMesh();if(!mesh)conti
  for(const prim of mesh.listPrimitives()){if(prim.getMode()!==Primitive.Mode.TRIANGLES||!prim.getAttribute('POSITION'))continue;
   const text=[prim.getMaterial()?.getName(),mesh.getName(),node.getName()].filter(Boolean).join(' ').toLowerCase();
   if(ignoreRe&&ignoreRe.test(text)){continue}
-  sources.push({node,mesh,prim,world,text})}}
+  // Mô hình dựng bằng code (scripts/procedural/) gắn sẵn nhãn trong extras của node → dùng như một hint.
+  const ex=node.getExtras();const preset=ex&&ex.part&&ex.key?{part:ex.part,key:ex.key,side:ex.side??null,end:ex.end??null}:null;
+  sources.push({node,mesh,prim,world,text,preset})}}
 if(!sources.length)fail('Không có primitive tam giác nào trong mô hình.');
 let {lo,hi,ext}=bboxUnder(identity());
 const up=args.up&&args.up!=='auto'?args.up:(ext[1]>ext[0]&&ext[1]>ext[2]?'z':'y');
@@ -84,7 +88,7 @@ for(const s of sources){
  const source={prim,pos,nrm,idx,semantics:prim.listSemantics().map(sem=>({sem,acc:prim.getAttribute(sem)}))};
  for(const triList of byRoot.values()){
   const b=triBounds(pos,idx,triList);
-  islands.push(withBounds({chunks:[{source,tris:triList}],faces:triList.length,text:s.text,name,matName,material},b));
+  islands.push(withBounds({chunks:[{source,tris:triList}],faces:triList.length,text:s.text,name,matName,material,preset:s.preset},b));
  }
 }
 log(`${islands.length} đảo lưới từ ${sources.length} primitive, ${islands.reduce((s,i)=>s+i.faces,0)} mặt`);
@@ -106,7 +110,7 @@ const pieces=[];const wheelBuckets=new Map();const leftovers=new Map();
 const leftoverKey=i=>`${i.name}|${i.matName}|${Math.round(i.center[0]/.5)}|${Math.round(i.center[1]/.5)}|${i.center[2]>.15?'L':i.center[2]<-.15?'R':'C'}`;
 for(const i of islands){
  const maxDim=Math.max(...i.size);
- const hinted=hints.find(h=>h.re.test(i.text));
+ const hinted=hintFor(i)||i.preset;
  // Bánh xe: từ khóa HOẶC gần tâm bánh — nhưng luôn phải ở gần bánh (dải cao su cửa 'lop xe' hay 'rim_chrome' trong khoang máy không phải bánh).
  const nearW=nearestWheel(i.center);
  const wheelPart=!hinted&&((wheelish(i.text)&&maxDim<wheelR*3.2&&nearW<wheelR*2.2)||(nearW<wheelR*1.3&&maxDim<wheelR*2.4&&!/glass|kính|kinh|light|đèn|den[ _.]|body|door|fender|paint|coat/.test(i.text)));
@@ -172,7 +176,7 @@ function classify(piece){
  const inCabinBox=Math.abs(cx)<L*.34&&side<Wb*.5&&cy>H*.2&&cy<H*.98;
  const lampZone=Math.abs(cx)>L*.4&&cy>H*.36&&cy<H*.75&&side>Wb*.15;
  const interiorish=has('interior','seat','upholster','ghế','ghe ','dashboard','dash','steering','cabin','nội thất','noi that','console','carpet','rug','pedal','cockpit','belt','monitor','screen','leather','wunderbaum')||(inCabinBox&&has('_int','int_'));
- if(piece.hint)return {part:piece.hint.part||'body',key:piece.hint.key||'exterior',side:sideOf(),end:type==='car'&&piece.hint.part==='wheels'?endOf():null};
+ if(piece.hint)return {part:piece.hint.part||'body',key:piece.hint.key||'exterior',side:piece.hint.side??sideOf(),end:piece.hint.end??(type==='car'&&piece.hint.part==='wheels'?endOf():null)};
  if(piece.wheel){
   let key,part='wheels';
   if(piece.hint)return {part:piece.hint.part||'wheels',key:piece.hint.key||'wheel.part',side:sideOf(),end:endOf()};

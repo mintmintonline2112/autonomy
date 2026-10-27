@@ -1,0 +1,37 @@
+{
+  "id": "ebike-city",
+  "brand": "Autonomy",
+  "name": "E-City",
+  "type": "bicycle",
+  "tagline": {
+    "vi": "Xe đạp điện đô thị — mô hình minh họa dựng bằng code",
+    "en": "City e-bike — an illustrative model built in code"
+  },
+  "powertrain": "ev",
+  "dimensions": {
+    "length": 1.83,
+    "width": 0.668,
+    "height": 1.082,
+    "wheelbase": 1.12
+  },
+  "attribution": {
+    "title": "E-City procedural e-bike (scripts/procedural/ebike.mjs)",
+    "creator": "Autonomy",
+    "creatorUrl": "https://github.com/mintmintonline2112/autonomy",
+    "source": "https://github.com/mintmintonline2112/autonomy/blob/main/scripts/procedural/ebike.mjs",
+    "license": "MIT",
+    "licenseUrl": "https://opensource.org/licenses/MIT"
+  },
+  "pipeline": {
+    "simplify": null,
+    "textures": null,
+    "flip": true,
+    "maxPieces": 400,
+    "ignore": [],
+    "hints": []
+  },
+  "links": {
+    "specs": "https://github.com/mintmintonline2112/autonomy/blob/main/scripts/procedural/ebike.mjs"
+  },
+  "layout": "ev"
+}

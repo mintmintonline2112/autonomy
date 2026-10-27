@@ -49,7 +49,8 @@ scripts/
 1. Tải mô hình glTF/GLB vào `source/<id>/` (Sketchfab: `SKETCHFAB_TOKEN=… node scripts/download-source.mjs <id> <uid>`).
 2. Tạo `models/<id>/model.json` (kích thước thật dài/rộng/cao/cơ sở/vệt bánh, ghi công, `pipeline`).
 3. `npm run model:prepare -- <id>`; đọc `public/models/<id>/review.md`, sửa nhãn sai bằng `pipeline.hints`
-   (`match` là regex trên "vật liệu tên-lưới tên-node", `part` + `key` theo `app/i18n/labels.ts`); mảnh cần bỏ → `pipeline.ignore`.
+   (`match` là regex trên "vật liệu tên-lưới tên-node", `part` + `key` theo `app/i18n/labels.ts`, `near: [x,y,z]` tùy chọn
+   lọc theo tâm mảnh trong review.md khi nhiều mảnh chung lưới); mảnh cần bỏ → `pipeline.ignore`.
 4. Viết `content.vi.json`, `content.en.json` (và `internals.json` nếu cần), rồi `npm run validate -- <id>`.
 5. `npm run dev` — trang `/<id>/` và mục trong gallery/switcher xuất hiện tự động.
 

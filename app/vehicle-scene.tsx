@@ -5,7 +5,7 @@ import {RoundedBoxGeometry} from 'three/examples/jsm/geometries/RoundedBoxGeomet
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
 import {RoomEnvironment} from 'three/examples/jsm/environments/RoomEnvironment.js';
 import {MeshoptDecoder} from 'three/examples/jsm/libs/meshopt_decoder.module.js';
-import {createExplosionLayout,layoutCenter,overviewDirection} from './explosion-layout';
+import {createExplosionLayout,layoutCenter,minLayoutWidth,overviewDirection} from './explosion-layout';
 import {PointerTap} from './pointer-tap';
 import {UI,type Lang} from './i18n/ui';
 import {pieceLabel} from './labels';
@@ -95,7 +95,7 @@ const VehicleScene=forwardRef<SceneHandle,Props>(function VehicleScene(props,ref
     }});
    });
    if(!pieces.length){setError(T.noPieces);return}
-   layout=createExplosionLayout(pieces);
+   layout=createExplosionLayout(pieces,minLayoutWidth(vehicle.meta.type,L));
    pieces.forEach((piece,i)=>{
     piece.fullSpread.copy(layout!.pieces.get(piece.id)!.translation);
     const meta=byId.get(piece.id);const label=meta?pieceLabel(meta,latest.current.lang,vehicle):T.unknownPiece;

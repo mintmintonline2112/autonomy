@@ -1,0 +1,68 @@
+{
+  "id": "vinfast-vf3",
+  "brand": "VinFast",
+  "name": "VF 3",
+  "type": "car",
+  "year": "2024–",
+  "tagline": {
+    "vi": "Ô tô điện mini đô thị 4 chỗ",
+    "en": "Four-seat electric city mini car"
+  },
+  "powertrain": "ev",
+  "dimensions": {
+    "length": 3.19,
+    "width": 1.679,
+    "height": 1.622,
+    "wheelbase": 2.075
+  },
+  "attribution": {
+    "title": "Vinfast VF3 Plus 2026",
+    "creator": "Hoàng Huy",
+    "creatorUrl": "https://sketchfab.com/danghoanghuy69",
+    "source": "https://sketchfab.com/3d-models/vinfast-vf3-plus-2026-aa87e1cd1fdd42ae92e5a397e3d5b125",
+    "license": "CC BY 4.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  "pipeline": {
+    "simplify": null,
+    "textures": 1024,
+    "flip": false,
+    "maxPieces": 400,
+    "ignore": [],
+    "hints": [
+      { "match": "object_2 ", "near": [-0.58, 1.23, 0], "part": "glass", "key": "windshield" },
+      { "match": "object_2 ", "near": [0.41, 1.24, 0], "part": "glass", "key": "glass" },
+      { "match": "object_2 ", "part": "glass", "key": "glass.side" },
+      { "match": "tire\\.002", "part": "wheels", "key": "wheel" },
+      { "match": "^disk ", "part": "body", "key": "light.front" },
+      { "match": "object_4 ", "part": "body", "key": "logo" },
+      { "match": "object_6 ", "part": "body", "key": "trim" },
+      { "match": "material\\.016", "part": "cabin", "key": "interior.block" },
+      { "match": "material\\.013", "part": "body", "key": "plate" },
+      { "match": "object_1 ", "near": [0.45, 1.42, 0], "part": "body", "key": "roof" },
+      { "match": "object_1 ", "near": [1.37, 0.98, 0.01], "part": "doors", "key": "tailgate" },
+      { "match": "object_3 ", "near": [1.05, 0.55, 0], "part": "body", "key": "trim.lower" },
+      { "match": "object_3 ", "near": [-1.08, 0.53, -0.01], "part": "body", "key": "trim.lower" },
+      { "match": "object_3 ", "near": [-1.43, 0.8, -0.01], "part": "body", "key": "grille" },
+      { "match": "object_3 ", "near": [-0.51, 1.23, 0.6], "part": "body", "key": "trim" },
+      { "match": "object_3 ", "near": [-0.5, 1.23, -0.61], "part": "body", "key": "trim" },
+      { "match": "object_3 ", "near": [-0.5, 1.08, 0.7], "part": "body", "key": "mirror" },
+      { "match": "object_3 ", "near": [-0.49, 1.08, -0.71], "part": "body", "key": "mirror" },
+      { "match": "object_3 ", "near": [-1.47, 0.44, 0.32], "part": "body", "key": "bumper.front" },
+      { "match": "object_3 ", "near": [-1.47, 0.44, -0.34], "part": "body", "key": "bumper.front" },
+      { "match": "object_3 ", "near": [-1.37, 0.64, -0.27], "part": "body", "key": "bumper.front" },
+      { "match": "object_3 ", "near": [-1.38, 0.64, 0.26], "part": "body", "key": "bumper.front" }
+    ]
+  },
+  "systemFallback": {
+    "brakes": "wheels",
+    "exhaust": "body",
+    "engine": "body"
+  },
+  "links": {
+    "specs": "https://vinfastauto.com/vn_vi/vf3",
+    "manual": "https://om.vinfastauto.com/"
+  },
+  "layout": "ev",
+  "doors": 2
+}

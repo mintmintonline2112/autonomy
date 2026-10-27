@@ -1,0 +1,1276 @@
+{
+ "id": "vinfast-vf3",
+ "file": "model.glb",
+ "version": "50c644d293",
+ "files": {
+  "full": {
+   "file": "model.glb",
+   "bytes": 2540756,
+   "faces": 262981
+  },
+  "light": {
+   "file": "model.light.glb",
+   "bytes": 1489564,
+   "faces": 151670
+  }
+ },
+ "generated": "2026-10-27T08:54:47.199Z",
+ "input": "source\\vinfast-vf3\\scene.glb",
+ "lengthMeters": 3.19,
+ "bounds": {
+  "length": 3.19,
+  "height": 1.622,
+  "bodyWidth": 1.679
+ },
+ "wheelCenters": {
+  "RR": [
+   1.0145766288042068,
+   0.33510449156165145,
+   -0.697803869843483
+  ],
+  "FR": [
+   -1.0360788330435753,
+   0.33510448411107063,
+   -0.7082196027040482
+  ],
+  "FL": [
+   -1.0431492403149605,
+   0.33510448411107063,
+   0.693945124745369
+  ],
+  "RL": [
+   1.007511392235756,
+   0.33510449156165145,
+   0.7033160999417305
+  ]
+ },
+ "counts": {
+  "body": 41,
+  "glass": 12,
+  "doors": 3,
+  "cabin": 1,
+  "wheels": 4
+ },
+ "objects": [
+  {
+   "id": "body_0000",
+   "part": "body",
+   "key": "roof",
+   "side": null,
+   "end": null,
+   "source": "Object_1",
+   "material": "Blue_Car_Paint.001",
+   "center": [
+    0.448,
+    1.424,
+    0.003
+   ],
+   "size": [
+    1.938,
+    0.241,
+    1.293
+   ],
+   "faces": 19028
+  },
+  {
+   "id": "glass_0001",
+   "part": "glass",
+   "key": "glass",
+   "side": null,
+   "end": null,
+   "source": "Object_2",
+   "material": "Material.012",
+   "center": [
+    0.411,
+    1.238,
+    -0.001
+   ],
+   "size": [
+    2.07,
+    0.424,
+    1.337
+   ],
+   "faces": 6156
+  },
+  {
+   "id": "body_0002",
+   "part": "body",
+   "key": "trim.lower",
+   "side": null,
+   "end": null,
+   "source": "Object_3",
+   "material": "Material.010",
+   "center": [
+    1.051,
+    0.551,
+    0.002
+   ],
+   "size": [
+    1.089,
+    0.598,
+    1.713
+   ],
+   "faces": 22962
+  },
+  {
+   "id": "body_0003",
+   "part": "body",
+   "key": "trim.lower",
+   "side": null,
+   "end": null,
+   "source": "Object_3",
+   "material": "Material.010",
+   "center": [
+    -1.077,
+    0.532,
+    -0.008
+   ],
+   "size": [
+    1.037,
+    0.536,
+    1.633
+   ],
+   "faces": 19160
+  },
+  {
+   "id": "glass_0004",
+   "part": "glass",
+   "key": "glass.side",
+   "side": "L",
+   "end": null,
+   "source": "Object_2",
+   "material": "Material.012",
+   "center": [
+    0.357,
+    1.229,
+    0.632
+   ],
+   "size": [
+    1.827,
+    0.418,
+    0.144
+   ],
+   "faces": 5008
+  },
+  {
+   "id": "glass_0005",
+   "part": "glass",
+   "key": "glass.side",
+   "side": "R",
+   "end": null,
+   "source": "Object_2",
+   "material": "Material.012",
+   "center": [
+    0.363,
+    1.229,
+    -0.631
+   ],
+   "size": [
+    1.827,
+    0.418,
+    0.14
+   ],
+   "faces": 4962
+  },
+  {
+   "id": "body_0006",
+   "part": "body",
+   "key": "hood",
+   "side": null,
+   "end": null,
+   "source": "Object_1",
+   "material": "Blue_Car_Paint.001",
+   "center": [
+    -1.017,
+    0.99,
+    -0.005
+   ],
+   "size": [
+    0.946,
+    0.17,
+    1.331
+   ],
+   "faces": 10454
+  },
+  {
+   "id": "doors_0007",
+   "part": "doors",
+   "key": "tailgate",
+   "side": null,
+   "end": null,
+   "source": "Object_1",
+   "material": "Blue_Car_Paint.001",
+   "center": [
+    1.369,
+    0.976,
+    0.006
+   ],
+   "size": [
+    0.282,
+    0.807,
+    1.251
+   ],
+   "faces": 8858
+  },
+  {
+   "id": "body_0008",
+   "part": "body",
+   "key": "bumper.rear",
+   "side": null,
+   "end": null,
+   "source": "Object_3",
+   "material": "Material.010",
+   "center": [
+    1.447,
+    0.474,
+    0.005
+   ],
+   "size": [
+    0.277,
+    0.226,
+    1.506
+   ],
+   "faces": 5406
+  },
+  {
+   "id": "doors_0009",
+   "part": "doors",
+   "key": "door",
+   "side": "L",
+   "end": null,
+   "source": "Object_1",
+   "material": "Blue_Car_Paint.001",
+   "center": [
+    0.092,
+    0.688,
+    0.698
+   ],
+   "size": [
+    1.327,
+    0.723,
+    0.083
+   ],
+   "faces": 3776
+  },
+  {
+   "id": "doors_0010",
+   "part": "doors",
+   "key": "door",
+   "side": "R",
+   "end": null,
+   "source": "Object_1",
+   "material": "Blue_Car_Paint.001",
+   "center": [
+    0.099,
+    0.688,
+    -0.702
+   ],
+   "size": [
+    1.327,
+    0.723,
+    0.083
+   ],
+   "faces": 3750
+  },
+  {
+   "id": "body_0011",
+   "part": "body",
+   "key": "grille",
+   "side": null,
+   "end": null,
+   "source": "Object_3",
+   "material": "Material.010",
+   "center": [
+    -1.427,
+    0.803,
+    -0.009
+   ],
+   "size": [
+    0.158,
+    0.282,
+    1.298
+   ],
+   "faces": 8461
+  },
+  {
+   "id": "body_0012",
+   "part": "body",
+   "key": "bumper.front",
+   "side": null,
+   "end": null,
+   "source": "Object_1",
+   "material": "Blue_Car_Paint.001",
+   "center": [
+    -1.449,
+    0.679,
+    -0.009
+   ],
+   "size": [
+    0.124,
+    0.186,
+    1.309
+   ],
+   "faces": 5042
+  },
+  {
+   "id": "glass_0013",
+   "part": "glass",
+   "key": "windshield",
+   "side": null,
+   "end": null,
+   "source": "Object_2",
+   "material": "Material.012",
+   "center": [
+    -0.576,
+    1.231,
+    0
+   ],
+   "size": [
+    0.38,
+    0.425,
+    1.225
+   ],
+   "faces": 3044
+  },
+  {
+   "id": "body_0014",
+   "part": "body",
+   "key": "sill",
+   "side": "L",
+   "end": null,
+   "source": "Object_3",
+   "material": "Material.010",
+   "center": [
+    -0.021,
+    0.283,
+    0.757
+   ],
+   "size": [
+    1.353,
+    0.135,
+    0.12
+   ],
+   "faces": 2254
+  },
+  {
+   "id": "body_0015",
+   "part": "body",
+   "key": "sill",
+   "side": "R",
+   "end": null,
+   "source": "Object_3",
+   "material": "Material.010",
+   "center": [
+    -0.014,
+    0.283,
+    -0.758
+   ],
+   "size": [
+    1.354,
+    0.135,
+    0.111
+   ],
+   "faces": 2252
+  },
+  {
+   "id": "cabin_0016",
+   "part": "cabin",
+   "key": "interior.block",
+   "side": null,
+   "end": null,
+   "source": "Object_7",
+   "material": "Material.016",
+   "center": [
+    -0.006,
+    0.598,
+    0.01
+   ],
+   "size": [
+    3.075,
+    0.577,
+    0.884
+   ],
+   "faces": 20
+  },
+  {
+   "id": "body_0017",
+   "part": "body",
+   "key": "fender",
+   "side": "L",
+   "end": "F",
+   "source": "Object_1",
+   "material": "Blue_Car_Paint.001",
+   "center": [
+    -1.005,
+    0.736,
+    0.643
+   ],
+   "size": [
+    0.925,
+    0.579,
+    0.187
+   ],
+   "faces": 7134
+  },
+  {
+   "id": "body_0018",
+   "part": "body",
+   "key": "fender",
+   "side": "R",
+   "end": "F",
+   "source": "Object_1",
+   "material": "Blue_Car_Paint.001",
+   "center": [
+    -0.998,
+    0.736,
+    -0.657
+   ],
+   "size": [
+    0.926,
+    0.579,
+    0.179
+   ],
+   "faces": 7040
+  },
+  {
+   "id": "body_0019",
+   "part": "body",
+   "key": "trim",
+   "side": null,
+   "end": null,
+   "source": "Object_6",
+   "material": "Material.012",
+   "center": [
+    1.471,
+    0.895,
+    0.005
+   ],
+   "size": [
+    0.153,
+    0.178,
+    1.224
+   ],
+   "faces": 2166
+  },
+  {
+   "id": "wheels_0020",
+   "part": "wheels",
+   "key": "wheel",
+   "side": "R",
+   "end": "F",
+   "source": "Object_0",
+   "material": "Tire.002",
+   "center": [
+    -1.036,
+    0.335,
+    -0.69
+   ],
+   "size": [
+    0.67,
+    0.67,
+    0.271
+   ],
+   "faces": 11429
+  },
+  {
+   "id": "wheels_0021",
+   "part": "wheels",
+   "key": "wheel",
+   "side": "L",
+   "end": "F",
+   "source": "Object_0",
+   "material": "Tire.002",
+   "center": [
+    -1.043,
+    0.335,
+    0.676
+   ],
+   "size": [
+    0.67,
+    0.67,
+    0.271
+   ],
+   "faces": 11429
+  },
+  {
+   "id": "wheels_0022",
+   "part": "wheels",
+   "key": "wheel",
+   "side": "R",
+   "end": "R",
+   "source": "Object_0",
+   "material": "Tire.002",
+   "center": [
+    1.014,
+    0.335,
+    -0.679
+   ],
+   "size": [
+    0.67,
+    0.67,
+    0.271
+   ],
+   "faces": 11429
+  },
+  {
+   "id": "wheels_0023",
+   "part": "wheels",
+   "key": "wheel",
+   "side": "L",
+   "end": "R",
+   "source": "Object_0",
+   "material": "Tire.002",
+   "center": [
+    1.008,
+    0.335,
+    0.685
+   ],
+   "size": [
+    0.67,
+    0.67,
+    0.271
+   ],
+   "faces": 11429
+  },
+  {
+   "id": "body_0024",
+   "part": "body",
+   "key": "fender",
+   "side": "R",
+   "end": "R",
+   "source": "Object_1",
+   "material": "Blue_Car_Paint.001",
+   "center": [
+    1.102,
+    0.988,
+    -0.641
+   ],
+   "size": [
+    0.728,
+    0.498,
+    0.194
+   ],
+   "faces": 5458
+  },
+  {
+   "id": "body_0025",
+   "part": "body",
+   "key": "fender",
+   "side": "L",
+   "end": "R",
+   "source": "Object_1",
+   "material": "Blue_Car_Paint.001",
+   "center": [
+    1.095,
+    0.988,
+    0.648
+   ],
+   "size": [
+    0.729,
+    0.498,
+    0.189
+   ],
+   "faces": 5438
+  },
+  {
+   "id": "body_0026",
+   "part": "body",
+   "key": "bumper.front",
+   "side": "L",
+   "end": null,
+   "source": "Object_3",
+   "material": "Material.010",
+   "center": [
+    -1.468,
+    0.438,
+    0.318
+   ],
+   "size": [
+    0.172,
+    0.288,
+    0.821
+   ],
+   "faces": 4937
+  },
+  {
+   "id": "body_0027",
+   "part": "body",
+   "key": "bumper.front",
+   "side": "R",
+   "end": null,
+   "source": "Object_3",
+   "material": "Material.010",
+   "center": [
+    -1.467,
+    0.438,
+    -0.336
+   ],
+   "size": [
+    0.173,
+    0.288,
+    0.821
+   ],
+   "faces": 4936
+  },
+  {
+   "id": "body_0028",
+   "part": "body",
+   "key": "bumper.front",
+   "side": null,
+   "end": null,
+   "source": "Object_3",
+   "material": "Material.010",
+   "center": [
+    -1.374,
+    0.637,
+    -0.273
+   ],
+   "size": [
+    0.157,
+    0.286,
+    0.65
+   ],
+   "faces": 3677
+  },
+  {
+   "id": "body_0029",
+   "part": "body",
+   "key": "bumper.front",
+   "side": null,
+   "end": null,
+   "source": "Object_3",
+   "material": "Material.010",
+   "center": [
+    -1.376,
+    0.636,
+    0.256
+   ],
+   "size": [
+    0.155,
+    0.286,
+    0.649
+   ],
+   "faces": 3663
+  },
+  {
+   "id": "body_0030",
+   "part": "body",
+   "key": "logo",
+   "side": "R",
+   "end": null,
+   "source": "Object_4",
+   "material": "Blue_Car_Paint.001",
+   "center": [
+    -1.493,
+    0.806,
+    -0.333
+   ],
+   "size": [
+    0.073,
+    0.116,
+    0.595
+   ],
+   "faces": 1470
+  },
+  {
+   "id": "body_0031",
+   "part": "body",
+   "key": "logo",
+   "side": "L",
+   "end": null,
+   "source": "Object_4",
+   "material": "Blue_Car_Paint.001",
+   "center": [
+    -1.496,
+    0.806,
+    0.315
+   ],
+   "size": [
+    0.069,
+    0.116,
+    0.596
+   ],
+   "faces": 1470
+  },
+  {
+   "id": "body_0032",
+   "part": "body",
+   "key": "trim",
+   "side": "R",
+   "end": null,
+   "source": "Object_3",
+   "material": "Material.010",
+   "center": [
+    -0.503,
+    1.225,
+    -0.609
+   ],
+   "size": [
+    0.316,
+    0.425,
+    0.157
+   ],
+   "faces": 2572
+  },
+  {
+   "id": "body_0033",
+   "part": "body",
+   "key": "trim",
+   "side": "L",
+   "end": null,
+   "source": "Object_3",
+   "material": "Material.010",
+   "center": [
+    -0.509,
+    1.225,
+    0.601
+   ],
+   "size": [
+    0.317,
+    0.425,
+    0.156
+   ],
+   "faces": 2560
+  },
+  {
+   "id": "body_0034",
+   "part": "body",
+   "key": "logo",
+   "side": null,
+   "end": null,
+   "source": "Object_4",
+   "material": "Blue_Car_Paint.001",
+   "center": [
+    1.549,
+    0.882,
+    -0.296
+   ],
+   "size": [
+    0.052,
+    0.106,
+    0.565
+   ],
+   "faces": 1296
+  },
+  {
+   "id": "body_0035",
+   "part": "body",
+   "key": "logo",
+   "side": "L",
+   "end": null,
+   "source": "Object_4",
+   "material": "Blue_Car_Paint.001",
+   "center": [
+    1.545,
+    0.882,
+    0.323
+   ],
+   "size": [
+    0.056,
+    0.106,
+    0.565
+   ],
+   "faces": 1290
+  },
+  {
+   "id": "body_0036",
+   "part": "body",
+   "key": "mirror",
+   "side": "R",
+   "end": null,
+   "source": "Object_3",
+   "material": "Material.010",
+   "center": [
+    -0.493,
+    1.083,
+    -0.71
+   ],
+   "size": [
+    0.187,
+    0.11,
+    0.157
+   ],
+   "faces": 5010
+  },
+  {
+   "id": "body_0037",
+   "part": "body",
+   "key": "mirror",
+   "side": "L",
+   "end": null,
+   "source": "Object_3",
+   "material": "Material.010",
+   "center": [
+    -0.499,
+    1.083,
+    0.702
+   ],
+   "size": [
+    0.187,
+    0.11,
+    0.157
+   ],
+   "faces": 5006
+  },
+  {
+   "id": "glass_0038",
+   "part": "glass",
+   "key": "lens.front",
+   "side": "L",
+   "end": null,
+   "source": "Object_14",
+   "material": "Glass_Windows.001",
+   "center": [
+    -1.458,
+    0.81,
+    0.468
+   ],
+   "size": [
+    0.091,
+    0.147,
+    0.263
+   ],
+   "faces": 1076
+  },
+  {
+   "id": "glass_0039",
+   "part": "glass",
+   "key": "lens.front",
+   "side": "R",
+   "end": null,
+   "source": "Object_14",
+   "material": "Glass_Windows.001",
+   "center": [
+    -1.453,
+    0.81,
+    -0.486
+   ],
+   "size": [
+    0.093,
+    0.147,
+    0.262
+   ],
+   "faces": 1070
+  },
+  {
+   "id": "body_0040",
+   "part": "body",
+   "key": "mirror",
+   "side": "R",
+   "end": null,
+   "source": "Object_3",
+   "material": "Material.010",
+   "center": [
+    -0.43,
+    1.123,
+    -0.8
+   ],
+   "size": [
+    0.078,
+    0.17,
+    0.118
+   ],
+   "faces": 5088
+  },
+  {
+   "id": "body_0041",
+   "part": "body",
+   "key": "mirror",
+   "side": "L",
+   "end": null,
+   "source": "Object_3",
+   "material": "Material.010",
+   "center": [
+    -0.438,
+    1.123,
+    0.791
+   ],
+   "size": [
+    0.077,
+    0.17,
+    0.118
+   ],
+   "faces": 5122
+  },
+  {
+   "id": "body_0042",
+   "part": "body",
+   "key": "light.front",
+   "side": "R",
+   "end": null,
+   "source": "Object_5",
+   "material": "Disk",
+   "center": [
+    -1.413,
+    0.811,
+    -0.482
+   ],
+   "size": [
+    0.125,
+    0.139,
+    0.241
+   ],
+   "faces": 111
+  },
+  {
+   "id": "body_0043",
+   "part": "body",
+   "key": "light.front",
+   "side": "L",
+   "end": null,
+   "source": "Object_5",
+   "material": "Disk",
+   "center": [
+    -1.442,
+    0.811,
+    0.466
+   ],
+   "size": [
+    0.076,
+    0.137,
+    0.246
+   ],
+   "faces": 128
+  },
+  {
+   "id": "body_0044",
+   "part": "body",
+   "key": "light.front",
+   "side": "L",
+   "end": null,
+   "source": "Object_13",
+   "material": "Clean_chrome",
+   "center": [
+    -1.391,
+    0.796,
+    0.515
+   ],
+   "size": [
+    0.103,
+    0.095,
+    0.095
+   ],
+   "faces": 604
+  },
+  {
+   "id": "body_0045",
+   "part": "body",
+   "key": "light.front",
+   "side": "R",
+   "end": null,
+   "source": "Object_13",
+   "material": "Clean_chrome",
+   "center": [
+    -1.386,
+    0.796,
+    -0.534
+   ],
+   "size": [
+    0.103,
+    0.095,
+    0.095
+   ],
+   "faces": 604
+  },
+  {
+   "id": "body_0046",
+   "part": "body",
+   "key": "logo",
+   "side": null,
+   "end": null,
+   "source": "Object_4",
+   "material": "Blue_Car_Paint.001",
+   "center": [
+    1.551,
+    0.878,
+    0.013
+   ],
+   "size": [
+    0.031,
+    0.106,
+    0.121
+   ],
+   "faces": 646
+  },
+  {
+   "id": "body_0047",
+   "part": "body",
+   "key": "logo",
+   "side": null,
+   "end": null,
+   "source": "Object_4",
+   "material": "Blue_Car_Paint.001",
+   "center": [
+    -1.509,
+    0.803,
+    -0.01
+   ],
+   "size": [
+    0.033,
+    0.104,
+    0.121
+   ],
+   "faces": 646
+  },
+  {
+   "id": "glass_0048",
+   "part": "glass",
+   "key": "lens.front",
+   "side": "R",
+   "end": null,
+   "source": "Object_12",
+   "material": "Glass_Windows-darker",
+   "center": [
+    -1.408,
+    0.796,
+    -0.534
+   ],
+   "size": [
+    0.09,
+    0.09,
+    0.09
+   ],
+   "faces": 888
+  },
+  {
+   "id": "glass_0049",
+   "part": "glass",
+   "key": "lens.front",
+   "side": "L",
+   "end": null,
+   "source": "Object_12",
+   "material": "Glass_Windows-darker",
+   "center": [
+    -1.413,
+    0.796,
+    0.516
+   ],
+   "size": [
+    0.09,
+    0.09,
+    0.09
+   ],
+   "faces": 876
+  },
+  {
+   "id": "body_0050",
+   "part": "body",
+   "key": "light.rear",
+   "side": "L",
+   "end": null,
+   "source": "Object_9",
+   "material": "Material.012",
+   "center": [
+    1.502,
+    0.902,
+    0.552
+   ],
+   "size": [
+    0.075,
+    0.151,
+    0.131
+   ],
+   "faces": 110
+  },
+  {
+   "id": "body_0051",
+   "part": "body",
+   "key": "light.rear",
+   "side": "R",
+   "end": null,
+   "source": "Object_9",
+   "material": "Material.012",
+   "center": [
+    1.507,
+    0.901,
+    -0.54
+   ],
+   "size": [
+    0.073,
+    0.151,
+    0.132
+   ],
+   "faces": 110
+  },
+  {
+   "id": "body_0052",
+   "part": "body",
+   "key": "plate",
+   "side": null,
+   "end": null,
+   "source": "Object_10",
+   "material": "Material.013",
+   "center": [
+    1.538,
+    0.459,
+    0.006
+   ],
+   "size": [
+    0.056,
+    0.177,
+    0.298
+   ],
+   "faces": 12
+  },
+  {
+   "id": "body_0053",
+   "part": "body",
+   "key": "light.rear",
+   "side": "L",
+   "end": null,
+   "source": "Object_8",
+   "material": "Material.014",
+   "center": [
+    1.5,
+    0.9,
+    0.548
+   ],
+   "size": [
+    0.074,
+    0.149,
+    0.127
+   ],
+   "faces": 76
+  },
+  {
+   "id": "body_0054",
+   "part": "body",
+   "key": "light.rear",
+   "side": "R",
+   "end": null,
+   "source": "Object_8",
+   "material": "Material.014",
+   "center": [
+    1.505,
+    0.9,
+    -0.537
+   ],
+   "size": [
+    0.073,
+    0.149,
+    0.127
+   ],
+   "faces": 72
+  },
+  {
+   "id": "body_0055",
+   "part": "body",
+   "key": "small",
+   "side": "L",
+   "end": null,
+   "source": "Object_3",
+   "material": "Material.010",
+   "center": [
+    -1.473,
+    0.459,
+    0.652
+   ],
+   "size": [
+    0.051,
+    0.113,
+    0.06
+   ],
+   "faces": 900
+  },
+  {
+   "id": "body_0056",
+   "part": "body",
+   "key": "small",
+   "side": "R",
+   "end": null,
+   "source": "Object_3",
+   "material": "Material.010",
+   "center": [
+    -1.466,
+    0.459,
+    -0.671
+   ],
+   "size": [
+    0.052,
+    0.113,
+    0.06
+   ],
+   "faces": 900
+  },
+  {
+   "id": "glass_0057",
+   "part": "glass",
+   "key": "lens.front",
+   "side": "R",
+   "end": null,
+   "source": "Object_11",
+   "material": "Material.017",
+   "center": [
+    -1.457,
+    0.873,
+    -0.549
+   ],
+   "size": [
+    0.031,
+    0.034,
+    0.151
+   ],
+   "faces": 8
+  },
+  {
+   "id": "glass_0058",
+   "part": "glass",
+   "key": "lens.front",
+   "side": "L",
+   "end": null,
+   "source": "Object_11",
+   "material": "Material.017",
+   "center": [
+    -1.462,
+    0.873,
+    0.53
+   ],
+   "size": [
+    0.029,
+    0.034,
+    0.152
+   ],
+   "faces": 8
+  },
+  {
+   "id": "glass_0059",
+   "part": "glass",
+   "key": "lens.front",
+   "side": "R",
+   "end": null,
+   "source": "Object_12",
+   "material": "Glass_Windows-darker",
+   "center": [
+    -1.422,
+    0.867,
+    -0.495
+   ],
+   "size": [
+    0.035,
+    0.02,
+    0.132
+   ],
+   "faces": 1250
+  },
+  {
+   "id": "glass_0060",
+   "part": "glass",
+   "key": "lens.front",
+   "side": "L",
+   "end": null,
+   "source": "Object_12",
+   "material": "Glass_Windows-darker",
+   "center": [
+    -1.427,
+    0.867,
+    0.477
+   ],
+   "size": [
+    0.035,
+    0.02,
+    0.132
+   ],
+   "faces": 1244
+  }
+ ]
+}

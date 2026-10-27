@@ -1,0 +1,1107 @@
+{
+ "id": "ebike-city",
+ "file": "model.glb",
+ "version": "58ad4f0a22",
+ "files": {
+  "full": {
+   "file": "model.glb",
+   "bytes": 438812,
+   "faces": 53380
+  },
+  "light": {
+   "file": "model.light.glb",
+   "bytes": 303996,
+   "faces": 53380
+  }
+ },
+ "generated": "2026-10-27T09:28:59.577Z",
+ "input": "source\\ebike-city\\scene.glb",
+ "lengthMeters": 1.83,
+ "bounds": {
+  "length": 1.83,
+  "height": 1.082,
+  "bodyWidth": 0.668
+ },
+ "wheelCenters": {
+  "F": [
+   -0.571055743843317,
+   0.33601637091487646,
+   0
+  ],
+  "R": [
+   0.5489988476037979,
+   0.33601637091487646,
+   0
+  ]
+ },
+ "counts": {
+  "wheels": 7,
+  "body": 17,
+  "drive": 13,
+  "cabin": 9,
+  "battery": 3,
+  "brakes": 4
+ },
+ "objects": [
+  {
+   "id": "wheels_0000",
+   "part": "wheels",
+   "key": "tire",
+   "side": null,
+   "end": "F",
+   "source": "tire F",
+   "material": "rubber",
+   "center": [
+    -0.571,
+    0.336,
+    0
+   ],
+   "size": [
+    0.672,
+    0.672,
+    0.052
+   ],
+   "faces": 5760
+  },
+  {
+   "id": "wheels_0001",
+   "part": "wheels",
+   "key": "tire",
+   "side": null,
+   "end": "R",
+   "source": "tire R",
+   "material": "rubber",
+   "center": [
+    0.549,
+    0.336,
+    0
+   ],
+   "size": [
+    0.672,
+    0.672,
+    0.052
+   ],
+   "faces": 5760
+  },
+  {
+   "id": "wheels_0002",
+   "part": "wheels",
+   "key": "rim",
+   "side": null,
+   "end": "F",
+   "source": "rim F",
+   "material": "aluminium",
+   "center": [
+    -0.571,
+    0.336,
+    0
+   ],
+   "size": [
+    0.595,
+    0.595,
+    0.038
+   ],
+   "faces": 2880
+  },
+  {
+   "id": "wheels_0003",
+   "part": "wheels",
+   "key": "rim",
+   "side": null,
+   "end": "R",
+   "source": "rim R",
+   "material": "aluminium",
+   "center": [
+    0.549,
+    0.336,
+    0
+   ],
+   "size": [
+    0.595,
+    0.595,
+    0.038
+   ],
+   "faces": 2880
+  },
+  {
+   "id": "body_0004",
+   "part": "body",
+   "key": "frame.down",
+   "side": null,
+   "end": null,
+   "source": "frame.down",
+   "material": "paint green",
+   "center": [
+    -0.203,
+    0.525,
+    0
+   ],
+   "size": [
+    0.515,
+    0.505,
+    0.056
+   ],
+   "faces": 2688
+  },
+  {
+   "id": "drive_0005",
+   "part": "drive",
+   "key": "chain",
+   "side": null,
+   "end": null,
+   "source": "chain",
+   "material": "steel",
+   "center": [
+    0.274,
+    0.3,
+    -0.06
+   ],
+   "size": [
+    0.633,
+    0.183,
+    0.009
+   ],
+   "faces": 5120
+  },
+  {
+   "id": "body_0006",
+   "part": "body",
+   "key": "rack",
+   "side": null,
+   "end": null,
+   "source": "rack",
+   "material": "black plastic",
+   "center": [
+    0.45,
+    0.569,
+    0
+   ],
+   "size": [
+    0.439,
+    0.448,
+    0.173
+   ],
+   "faces": 4400
+  },
+  {
+   "id": "wheels_0007",
+   "part": "wheels",
+   "key": "spokes",
+   "side": null,
+   "end": "F",
+   "source": "spokes F",
+   "material": "steel",
+   "center": [
+    -0.571,
+    0.336,
+    0
+   ],
+   "size": [
+    0.556,
+    0.556,
+    0.072
+   ],
+   "faces": 640
+  },
+  {
+   "id": "wheels_0008",
+   "part": "wheels",
+   "key": "spokes",
+   "side": null,
+   "end": "R",
+   "source": "spokes R",
+   "material": "steel",
+   "center": [
+    0.549,
+    0.336,
+    0
+   ],
+   "size": [
+    0.557,
+    0.557,
+    0.062
+   ],
+   "faces": 640
+  },
+  {
+   "id": "cabin_0009",
+   "part": "cabin",
+   "key": "handlebar",
+   "side": null,
+   "end": null,
+   "source": "handlebar",
+   "material": "aluminium",
+   "center": [
+    -0.359,
+    1.023,
+    0
+   ],
+   "size": [
+    0.156,
+    0.028,
+    0.607
+   ],
+   "faces": 2688
+  },
+  {
+   "id": "drive_0010",
+   "part": "drive",
+   "key": "cable",
+   "side": null,
+   "end": null,
+   "source": "cable.motor",
+   "material": "cable",
+   "center": [
+    0.245,
+    0.299,
+    0.057
+   ],
+   "size": [
+    0.574,
+    0.08,
+    0.063
+   ],
+   "faces": 1024
+  },
+  {
+   "id": "body_0011",
+   "part": "body",
+   "key": "fender",
+   "side": null,
+   "end": "F",
+   "source": "fender.front",
+   "material": "paint green fender",
+   "center": [
+    -0.563,
+    0.551,
+    0
+   ],
+   "size": [
+    0.704,
+    0.302,
+    0.066
+   ],
+   "faces": 128
+  },
+  {
+   "id": "body_0012",
+   "part": "body",
+   "key": "fender",
+   "side": null,
+   "end": "R",
+   "source": "fender.rear",
+   "material": "paint green fender",
+   "center": [
+    0.655,
+    0.428,
+    0
+   ],
+   "size": [
+    0.521,
+    0.549,
+    0.066
+   ],
+   "faces": 128
+  },
+  {
+   "id": "body_0013",
+   "part": "body",
+   "key": "fork.leg",
+   "side": "L",
+   "end": null,
+   "source": "fork.leg L",
+   "material": "paint green",
+   "center": [
+    -0.521,
+    0.513,
+    0.05
+   ],
+   "size": [
+    0.125,
+    0.36,
+    0.026
+   ],
+   "faces": 1344
+  },
+  {
+   "id": "body_0014",
+   "part": "body",
+   "key": "fork.leg",
+   "side": "R",
+   "end": null,
+   "source": "fork.leg R",
+   "material": "paint green",
+   "center": [
+    -0.521,
+    0.513,
+    -0.05
+   ],
+   "size": [
+    0.125,
+    0.36,
+    0.026
+   ],
+   "faces": 1344
+  },
+  {
+   "id": "battery_0015",
+   "part": "battery",
+   "key": "battery.case",
+   "side": null,
+   "end": null,
+   "source": "battery.case",
+   "material": "battery casing",
+   "center": [
+    -0.155,
+    0.585,
+    0
+   ],
+   "size": [
+    0.262,
+    0.284,
+    0.086
+   ],
+   "faces": 972
+  },
+  {
+   "id": "cabin_0016",
+   "part": "cabin",
+   "key": "saddle",
+   "side": null,
+   "end": null,
+   "source": "saddle",
+   "material": "saddle",
+   "center": [
+    0.261,
+    0.935,
+    0
+   ],
+   "size": [
+    0.29,
+    0.072,
+    0.138
+   ],
+   "faces": 1520
+  },
+  {
+   "id": "body_0017",
+   "part": "body",
+   "key": "stay.seat",
+   "side": "L",
+   "end": null,
+   "source": "stay.seat L",
+   "material": "paint green",
+   "center": [
+    0.36,
+    0.511,
+    0.044
+   ],
+   "size": [
+    0.391,
+    0.343,
+    0.067
+   ],
+   "faces": 80
+  },
+  {
+   "id": "body_0018",
+   "part": "body",
+   "key": "stay.seat",
+   "side": "R",
+   "end": null,
+   "source": "stay.seat R",
+   "material": "paint green",
+   "center": [
+    0.36,
+    0.511,
+    -0.044
+   ],
+   "size": [
+    0.391,
+    0.343,
+    0.067
+   ],
+   "faces": 80
+  },
+  {
+   "id": "body_0019",
+   "part": "body",
+   "key": "stay.chain",
+   "side": "L",
+   "end": null,
+   "source": "stay.chain L",
+   "material": "paint green",
+   "center": [
+    0.309,
+    0.318,
+    0.045
+   ],
+   "size": [
+    0.483,
+    0.058,
+    0.068
+   ],
+   "faces": 80
+  },
+  {
+   "id": "body_0020",
+   "part": "body",
+   "key": "stay.chain",
+   "side": "R",
+   "end": null,
+   "source": "stay.chain R",
+   "material": "paint green",
+   "center": [
+    0.309,
+    0.318,
+    -0.045
+   ],
+   "size": [
+    0.483,
+    0.058,
+    0.068
+   ],
+   "faces": 80
+  },
+  {
+   "id": "body_0021",
+   "part": "body",
+   "key": "frame.seat",
+   "side": null,
+   "end": null,
+   "source": "frame.seat",
+   "material": "paint green",
+   "center": [
+    0.118,
+    0.514,
+    0
+   ],
+   "size": [
+    0.173,
+    0.439,
+    0.036
+   ],
+   "faces": 80
+  },
+  {
+   "id": "drive_0022",
+   "part": "drive",
+   "key": "motor.hub",
+   "side": null,
+   "end": null,
+   "source": "motor.hub",
+   "material": "motor casing",
+   "center": [
+    0.549,
+    0.336,
+    0
+   ],
+   "size": [
+    0.2,
+    0.2,
+    0.075
+   ],
+   "faces": 256
+  },
+  {
+   "id": "drive_0023",
+   "part": "drive",
+   "key": "chainring",
+   "side": null,
+   "end": null,
+   "source": "chainring",
+   "material": "aluminium",
+   "center": [
+    0.049,
+    0.3,
+    -0.06
+   ],
+   "size": [
+    0.179,
+    0.179,
+    0.004
+   ],
+   "faces": 604
+  },
+  {
+   "id": "body_0024",
+   "part": "body",
+   "key": "kickstand",
+   "side": null,
+   "end": null,
+   "source": "kickstand",
+   "material": "black plastic",
+   "center": [
+    0.141,
+    0.163,
+    0.12
+   ],
+   "size": [
+    0.073,
+    0.284,
+    0.156
+   ],
+   "faces": 80
+  },
+  {
+   "id": "brakes_0025",
+   "part": "brakes",
+   "key": "disc",
+   "side": null,
+   "end": "R",
+   "source": "brake.disc R",
+   "material": "steel",
+   "center": [
+    0.549,
+    0.336,
+    0.074
+   ],
+   "size": [
+    0.16,
+    0.16,
+    0.003
+   ],
+   "faces": 256
+  },
+  {
+   "id": "brakes_0026",
+   "part": "brakes",
+   "key": "disc",
+   "side": null,
+   "end": "F",
+   "source": "brake.disc F",
+   "material": "steel",
+   "center": [
+    -0.571,
+    0.336,
+    0.074
+   ],
+   "size": [
+    0.16,
+    0.16,
+    0.003
+   ],
+   "faces": 256
+  },
+  {
+   "id": "cabin_0027",
+   "part": "cabin",
+   "key": "stem",
+   "side": null,
+   "end": null,
+   "source": "stem",
+   "material": "aluminium",
+   "center": [
+    -0.405,
+    0.942,
+    0
+   ],
+   "size": [
+    0.053,
+    0.165,
+    0.029
+   ],
+   "faces": 896
+  },
+  {
+   "id": "drive_0028",
+   "part": "drive",
+   "key": "motor.stator",
+   "side": null,
+   "end": null,
+   "source": "motor.stator",
+   "material": "copper",
+   "center": [
+    0.549,
+    0.336,
+    0
+   ],
+   "size": [
+    0.156,
+    0.156,
+    0.05
+   ],
+   "faces": 192
+  },
+  {
+   "id": "drive_0029",
+   "part": "drive",
+   "key": "crank",
+   "side": "L",
+   "end": null,
+   "source": "crank L",
+   "material": "aluminium",
+   "center": [
+    0.136,
+    0.3,
+    0.075
+   ],
+   "size": [
+    0.175,
+    0.024,
+    0.013
+   ],
+   "faces": 588
+  },
+  {
+   "id": "drive_0030",
+   "part": "drive",
+   "key": "crank",
+   "side": "R",
+   "end": null,
+   "source": "crank R",
+   "material": "aluminium",
+   "center": [
+    -0.039,
+    0.3,
+    -0.075
+   ],
+   "size": [
+    0.175,
+    0.024,
+    0.013
+   ],
+   "faces": 588
+  },
+  {
+   "id": "drive_0031",
+   "part": "drive",
+   "key": "controller",
+   "side": null,
+   "end": null,
+   "source": "controller",
+   "material": "black plastic",
+   "center": [
+    -0.086,
+    0.3,
+    0
+   ],
+   "size": [
+    0.118,
+    0.087,
+    0.056
+   ],
+   "faces": 588
+  },
+  {
+   "id": "cabin_0032",
+   "part": "cabin",
+   "key": "seatpost",
+   "side": null,
+   "end": null,
+   "source": "seatpost",
+   "material": "aluminium",
+   "center": [
+    0.219,
+    0.817,
+    0
+   ],
+   "size": [
+    0.088,
+    0.186,
+    0.027
+   ],
+   "faces": 80
+  },
+  {
+   "id": "body_0033",
+   "part": "body",
+   "key": "fork.crown",
+   "side": null,
+   "end": null,
+   "source": "fork.crown",
+   "material": "paint green",
+   "center": [
+    -0.469,
+    0.69,
+    0
+   ],
+   "size": [
+    0.056,
+    0.042,
+    0.125
+   ],
+   "faces": 588
+  },
+  {
+   "id": "body_0034",
+   "part": "body",
+   "key": "frame.head",
+   "side": null,
+   "end": null,
+   "source": "frame.head",
+   "material": "paint green",
+   "center": [
+    -0.429,
+    0.785,
+    0
+   ],
+   "size": [
+    0.1,
+    0.167,
+    0.048
+   ],
+   "faces": 80
+  },
+  {
+   "id": "drive_0035",
+   "part": "drive",
+   "key": "pedal",
+   "side": "L",
+   "end": null,
+   "source": "pedal L",
+   "material": "black plastic",
+   "center": [
+    0.219,
+    0.3,
+    0.135
+   ],
+   "size": [
+    0.072,
+    0.02,
+    0.095
+   ],
+   "faces": 588
+  },
+  {
+   "id": "drive_0036",
+   "part": "drive",
+   "key": "pedal",
+   "side": "R",
+   "end": null,
+   "source": "pedal R",
+   "material": "black plastic",
+   "center": [
+    -0.121,
+    0.3,
+    -0.135
+   ],
+   "size": [
+    0.072,
+    0.02,
+    0.095
+   ],
+   "faces": 588
+  },
+  {
+   "id": "drive_0037",
+   "part": "drive",
+   "key": "cable",
+   "side": null,
+   "end": null,
+   "source": "cable.battery",
+   "material": "cable",
+   "center": [
+    -0.081,
+    0.385,
+    0.035
+   ],
+   "size": [
+    0.048,
+    0.113,
+    0.019
+   ],
+   "faces": 384
+  },
+  {
+   "id": "cabin_0038",
+   "part": "cabin",
+   "key": "display",
+   "side": null,
+   "end": null,
+   "source": "display",
+   "material": "display",
+   "center": [
+    -0.453,
+    1.058,
+    0
+   ],
+   "size": [
+    0.056,
+    0.049,
+    0.085
+   ],
+   "faces": 588
+  },
+  {
+   "id": "drive_0039",
+   "part": "drive",
+   "key": "bb.axle",
+   "side": null,
+   "end": null,
+   "source": "bb.axle",
+   "material": "steel",
+   "center": [
+    0.049,
+    0.3,
+    0
+   ],
+   "size": [
+    0.018,
+    0.018,
+    0.16
+   ],
+   "faces": 80
+  },
+  {
+   "id": "cabin_0040",
+   "part": "cabin",
+   "key": "brake.lever",
+   "side": "L",
+   "end": null,
+   "source": "brake.lever L",
+   "material": "black plastic",
+   "center": [
+    -0.346,
+    1.005,
+    0.25
+   ],
+   "size": [
+    0.018,
+    0.014,
+    0.105
+   ],
+   "faces": 588
+  },
+  {
+   "id": "cabin_0041",
+   "part": "cabin",
+   "key": "brake.lever",
+   "side": "R",
+   "end": null,
+   "source": "brake.lever R",
+   "material": "black plastic",
+   "center": [
+    -0.346,
+    1.005,
+    -0.25
+   ],
+   "size": [
+    0.018,
+    0.014,
+    0.105
+   ],
+   "faces": 588
+  },
+  {
+   "id": "body_0042",
+   "part": "body",
+   "key": "light.rear",
+   "side": null,
+   "end": null,
+   "source": "light.rear",
+   "material": "lamp red",
+   "center": [
+    0.679,
+    0.768,
+    0
+   ],
+   "size": [
+    0.032,
+    0.036,
+    0.088
+   ],
+   "faces": 588
+  },
+  {
+   "id": "wheels_0043",
+   "part": "wheels",
+   "key": "hub",
+   "side": null,
+   "end": "F",
+   "source": "hub F",
+   "material": "aluminium",
+   "center": [
+    -0.571,
+    0.336,
+    0
+   ],
+   "size": [
+    0.048,
+    0.048,
+    0.1
+   ],
+   "faces": 128
+  },
+  {
+   "id": "cabin_0044",
+   "part": "cabin",
+   "key": "grip",
+   "side": "L",
+   "end": null,
+   "source": "grip L",
+   "material": "rubber",
+   "center": [
+    -0.301,
+    1.021,
+    0.278
+   ],
+   "size": [
+    0.059,
+    0.035,
+    0.113
+   ],
+   "faces": 80
+  },
+  {
+   "id": "cabin_0045",
+   "part": "cabin",
+   "key": "grip",
+   "side": "R",
+   "end": null,
+   "source": "grip R",
+   "material": "rubber",
+   "center": [
+    -0.301,
+    1.021,
+    -0.278
+   ],
+   "size": [
+    0.059,
+    0.035,
+    0.113
+   ],
+   "faces": 80
+  },
+  {
+   "id": "brakes_0046",
+   "part": "brakes",
+   "key": "caliper",
+   "side": null,
+   "end": "R",
+   "source": "brake.caliper R",
+   "material": "black plastic",
+   "center": [
+    0.474,
+    0.363,
+    0.086
+   ],
+   "size": [
+    0.045,
+    0.06,
+    0.024
+   ],
+   "faces": 588
+  },
+  {
+   "id": "brakes_0047",
+   "part": "brakes",
+   "key": "caliper",
+   "side": null,
+   "end": "F",
+   "source": "brake.caliper F",
+   "material": "black plastic",
+   "center": [
+    -0.496,
+    0.309,
+    0.086
+   ],
+   "size": [
+    0.045,
+    0.06,
+    0.024
+   ],
+   "faces": 588
+  },
+  {
+   "id": "body_0048",
+   "part": "body",
+   "key": "frame.bb",
+   "side": null,
+   "end": null,
+   "source": "frame.bb",
+   "material": "paint green",
+   "center": [
+    0.049,
+    0.3,
+    0
+   ],
+   "size": [
+    0.048,
+    0.048,
+    0.078
+   ],
+   "faces": 256
+  },
+  {
+   "id": "body_0049",
+   "part": "body",
+   "key": "light.front",
+   "side": null,
+   "end": null,
+   "source": "light.front",
+   "material": "lamp white",
+   "center": [
+    -0.48,
+    0.8,
+    0
+   ],
+   "size": [
+    0.062,
+    0.066,
+    0.066
+   ],
+   "faces": 128
+  },
+  {
+   "id": "battery_0050",
+   "part": "battery",
+   "key": "battery.cells",
+   "side": null,
+   "end": null,
+   "source": "battery.cells",
+   "material": "cell wrap",
+   "center": [
+    -0.252,
+    0.677,
+    0
+   ],
+   "size": [
+    0.018,
+    0.018,
+    0.062
+   ],
+   "faces": 64
+  },
+  {
+   "id": "battery_0051",
+   "part": "battery",
+   "key": "battery.cells",
+   "side": null,
+   "end": null,
+   "source": "battery.cells",
+   "material": "cell wrap",
+   "center": [
+    -0.149,
+    0.585,
+    0
+   ],
+   "size": [
+    0.2,
+    0.232,
+    0.062
+   ],
+   "faces": 1856
+  },
+  {
+   "id": "drive_0052",
+   "part": "drive",
+   "key": "cog",
+   "side": null,
+   "end": null,
+   "source": "cog",
+   "material": "steel",
+   "center": [
+    0.549,
+    0.336,
+    -0.06
+   ],
+   "size": [
+    0.079,
+    0.079,
+    0.004
+   ],
+   "faces": 252
+  }
+ ]
+}

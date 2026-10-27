@@ -5,10 +5,12 @@ export const overviewDirection=new THREE.Vector3(-5.7,2.1,6.3).normalize();
 const right=new THREE.Vector3().crossVectors(new THREE.Vector3(0,1,0),overviewDirection).normalize();
 const up=new THREE.Vector3().crossVectors(overviewDirection,right).normalize();
 export const layoutCenter=new THREE.Vector3(0,3,0);
+/** Minimum grid width: tuned on cars (12 m); two-wheelers scale it down so their small parts stay legible. */
+export const minLayoutWidth=(type:string,length:number)=>type==='car'?12:12*length/5.1;
 
 // Pack the actual projected bounds, so even neighboring trim fragments separate.
 // The meshes retain their original orientation and scale throughout the transition.
-export function createExplosionLayout(pieces:ExplodablePiece[]) {
+export function createExplosionLayout(pieces:ExplodablePiece[],minWidth=12) {
  const cards=pieces.map(piece=>{
   const {min,max}=piece.bounds;let left=Infinity,bottom=Infinity,rightEdge=-Infinity,top=-Infinity;
   for(const x of [min.x,max.x])for(const y of [min.y,max.y])for(const z of [min.z,max.z]){
@@ -18,7 +20,7 @@ export function createExplosionLayout(pieces:ExplodablePiece[]) {
   return {...piece,width:Math.max(.36,rightEdge-left)+.22,height:Math.max(.3,top-bottom)+.22,center:piece.bounds.getCenter(new THREE.Vector3())};
  }).sort((a,b)=>a.part.localeCompare(b.part)||b.height-a.height||a.id.localeCompare(b.id));
  const area=cards.reduce((sum,c)=>sum+c.width*c.height,0);
- const width=Math.max(12,Math.sqrt(area*1.6));
+ const width=Math.max(minWidth,Math.sqrt(area*1.6));
  let x=0,y=0,rowHeight=0;
  const slots=cards.map(card=>{
   if(x&&x+card.width>width){x=0;y+=rowHeight;rowHeight=0}
